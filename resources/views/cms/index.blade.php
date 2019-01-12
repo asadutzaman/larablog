@@ -22,7 +22,7 @@
         <a href="#!user"><img class="circle" src="img/asad_c.jpg"></a>
         <a href="#!name"><span class="white-text name">Asad Skywalker</span></a>
         <a href="#!email"><span class="white-text email">asad@skywalker.com</span></a>
-        <a class="waves-effect waves-light" href="#"><i class="material-icons">power_off</i></a></td>
+        <a class="waves-effect waves-light" href="#"><i class="material-icons">power_off</i>logout</a></td>
       </div>
     </li>
     <!-- <li><a href="#!" class="white-text"><i class="white-text material-icons">cloud</i>First Link With Icon</a></li> -->
