@@ -81,7 +81,7 @@
             <li class="tab"><a  href="#complain">Complain</a></li>
             <li class="tab"><a href="#querys">Querys</a></li>
           </ul>
-            <form role="form" action="" method="POST">
+            <form role="form" method="POST" action="{{ url('store') }}">
               @csrf
               <!-- User basic info  -->
               <div id="user_info" class="col s12">
@@ -91,19 +91,19 @@
                     <label for="first_name">First Name</label>
                   </div>
                   <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate" name="name">
+                    <input id="last_name" type="text" class="validate" name="phone">
                     <label for="last_name">Phone</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <input id="password" type="password" class="validate" name="name">
+                    <input id="password" type="text" class="validate" name="email">
                     <label for="password">Email</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <input id="email" type="email" class="validate" name="name">
+                    <input id="email" type="text" class="validate" name="District">
                     <label for="email">District</label>
                   </div>
                 </div>
