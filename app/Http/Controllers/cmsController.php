@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\cms;
+use App\cms;
 
 class cmsController extends Controller
 {
@@ -43,26 +43,33 @@ class cmsController extends Controller
             'name' => $name,
             'email' => $email,
             'phone' => $phone,
-            'District' => $District
-        ]);
-
-        cms::create([
+            'District' => $District,
             'catagory' => $catagory,
             'product' => $product,
             'complain' => $complain,
-            'other_issue' => $other_issue
-        ]);
-
-        cms::create([
+            'other_issue' => $other_issue,
             'catagory' => $catagory,
             'product' => $product,
             'querys' => $querys,
             'other_info' => $other_info
         ]);
+
+        // cms::create([
+        //     'catagory' => $catagory,
+        //     'product' => $product,
+        //     'complain' => $complain,
+        //     'other_issue' => $other_issue
+        // ]);
+
+        // cms::create([
+        //     'catagory' => $catagory,
+        //     'product' => $product,
+        //     'querys' => $querys,
+        //     'other_info' => $other_info
+        // ]);
   
         //Product::create($request->all());
    
-        return redirect()->route('product')
-                        ->with('success','Product created successfully.');
+        return redirect()->back();
     }
 }
