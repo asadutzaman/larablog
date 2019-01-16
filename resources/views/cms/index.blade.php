@@ -81,7 +81,7 @@
             <li class="tab"><a  href="#complain">Complain</a></li>
             <li class="tab"><a href="#querys">Querys</a></li>
           </ul>
-            <form role="form" method="POST" action="{{ url('store') }}">
+            <form role="form" method="POST" action="{{ route('store') }}">
               @csrf
               <!-- User basic info  -->
               <div id="user_info" class="col s12">

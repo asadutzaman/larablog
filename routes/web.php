@@ -19,4 +19,4 @@ Route::get('/index', 'pageControll@index')->name('index');
 Route::get('/product', 'pageControll@product')->name('product');
 Route::get('/cms', 'pageControll@cms')->name('cms');
 
-Route::post('store','cmsController@store');
+Route::post('store','pageControll@store');
