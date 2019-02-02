@@ -81,7 +81,8 @@
             <li class="tab"><a  href="#complain">Complain</a></li>
             <li class="tab"><a href="#querys">Querys</a></li>
           </ul>
-            
+            <form role="form" method="POST" action="{{url('lol.store')}}">
+              @csrf
               <!-- User basic info  -->
               <div id="user_info" class="col s12">
                 <div class="row">
@@ -135,8 +136,7 @@
               </div>
               <!-- complain  -->
               <!-- querys -->
-              <form role="form" method="POST" action="{{url('student.store')}}">
-              @csrf
+              
               <div id="querys" class="col s12">
                 <div class="row">
                   <div class="input-field col s6">

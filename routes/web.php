@@ -20,4 +20,4 @@ Route::get('/product', 'pageControll@product')->name('product');
 Route::get('/cms', 'pageControll@cms')->name('cms');
 
 Route::post('store','pageControll@store');
-Route::resource('student', 'StudentController');
+Route::resource('lol', 'cmsController');
