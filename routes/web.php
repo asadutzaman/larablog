@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/index', 'pageControll@index')->name('index');
 Route::get('/product', 'pageControll@product')->name('product');
-Route::get('/cms', 'pageControll@cms')->name('cms');
+Route::get('/', 'pageControll@cms')->name('cms');
 
 Route::post('store','pageControll@store');
 Route::resource('lol', 'cmsController');
